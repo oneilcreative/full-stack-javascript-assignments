@@ -1,14 +1,14 @@
 export default {
   isTrue: true,
   isFalse: false,
-  email: 'tjgarlick@gmail.com',
-  age: 35,
-  height: 64.5,
-  phone: '8012012200',
-  favoriteFoods: ['Apple', 'Banana', 'Potato'],
+  email: oneilgraphix@gmail.com
+  age: 42
+  height: 72
+  phone: '8015298152
+  favoritecars: ['camaro', 'corvette', 'Porche'],
   name: {
-    first: 'Tyler',
-    last: 'Garlick'
+    first: 'Mark',
+    last: 'ONeil'
   },
   notDefined: undefined,
   nullable: null,
