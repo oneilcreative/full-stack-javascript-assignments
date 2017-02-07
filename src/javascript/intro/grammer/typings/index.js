@@ -4,7 +4,7 @@ export default {
   email: oneilgraphix@gmail.com
   age: 42
   height: 72
-  phone: '8015298152
+  phone: '8015298152'
   favoritecars: ['camaro', 'corvette', 'Porche'],
   name: {
     first: 'Mark',
