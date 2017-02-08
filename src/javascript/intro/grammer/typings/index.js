@@ -1,14 +1,14 @@
 export default {
   isTrue: true,
   isFalse: false,
-  email: oneilgraphix@gmail.com
-  age: 42
-  height: 72
-  phone: '8015298152'
+  email: 'oneilgraphix@gmail.com',
+  age: 42,
+  height: 72,
+  phone: '8015298152',
   favoritecars: ['camaro', 'corvette', 'Porche'],
   name: {
     first: 'Mark',
-    last: 'ONeil'
+    last: 'ONeil',
   },
   notDefined: undefined,
   nullable: null,
