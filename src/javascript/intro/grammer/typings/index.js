@@ -18,4 +18,5 @@ export default {
   emptyString: '',
   zero: 0,
   one: 1
+  
 };
