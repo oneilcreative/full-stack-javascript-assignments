@@ -1,12 +1,15 @@
 export const ssn = value => {
 
-  const sanitize = () => value.replace(/\D+/g, '');
+  const sanitize = () => value.replace(/\D+/g, '').toString();
 
   const format = (value) => `${value.substring(0, 3)}-${value.substring(3, 5)}-${value.substring(5)}`;
 
+   const sanitizedValue = sanitize();
+
   const isValid = () => {
-    // Your code goes here....
-    //  return ??
+   
+    return sanitizedValue.length === 9;
+
   };
 
   return {
@@ -14,10 +17,19 @@ export const ssn = value => {
     isValid,
 
     toString(){
+      if(!isValid()) {
+        throw Error('Invalid SSN');
+      }
 
+    
+    return format(sanitizedValue);
     }
   };
 };
+
+const result = ssn('123-45-6789');
+console.log(result.toString());
+console.log(result.isValid());
 
 
 
