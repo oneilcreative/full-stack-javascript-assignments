@@ -47,42 +47,56 @@ console.log(calculator.subtract(7,3));
 console.log(calculator.multiply(7,3));
 
 const isTuesday = (day) => {
-    if(day === 'Teusday'){
-        return 'Yes';
-    } else {
-        return 'No';
-
-    }
-
-
+  
+  if(day === 'Tuesday') {
+    return 'Yes';
+  } 
+  return 'No';
 }
 
-console.log(isTuesday ('Teusday'));
-
-const isWeekend = (day) => {
-    if(day === 'Monday') {
-        return 'no';
-    }
+const isEven = (number) => {
+  
+  const areYouEven = number % 2 === 0; // Expression
+  console.log(areYouEven);
+  
+  if(areYouEven) {
+    return "Yes";
+  }
+  
+  return "No";
 };
 
-const isTacoTeusday = (day) => {
-    switch (day) {
-        case 'Monday':
-        case 'Wendsday':
-        case 'Thursday':
-        case 'Friday':
-        case 'Saturday':
-        case 'Sunday':
-    return 'no';
-    }
-    return 'yes';
-}
-console.log(isTacoTeusday('Friday'));
-
-const isTacoTeusday = (day) => {
-    if(day !== 'Teusday') {
-        return 'no';
-    }
-    return 'yes';
+const isWeekend = (day) => {
+  switch(day) {
+    case 'Monday':
+    case 'Tuesday':
+    case 'Wednesday':
+    case 'Thursday':
+    case 'Friday':
+      return 'No'; 
+  }
+  return 'Yes';
 }
 
+
+const isTacoTuesday = (day) => {
+    switch(day) {
+      case 'Monday':
+      case 'Wednesday':
+      case 'Thursday':
+      case 'Friday':
+      case 'Saturday':
+      case 'Sunday':
+        return 'No'; 
+    }
+  return 'Yes';
+};
+
+const isTacoTuesdayPlusPlus = (day) => {
+  if(day !== 'Tuesday') {
+    return 'No';
+  }
+  
+  return 'Yes';
+};    
+console.log(isTacoTuesday('Tuesday'));  // No
